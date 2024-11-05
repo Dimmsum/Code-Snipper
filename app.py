@@ -1,7 +1,15 @@
 #Imports the flask package
 from flask import Flask, render_template,url_for
+from sqlalchemy import SQLAlchemy
+
+
 #creating an instance of the flask class from the flask package
 app = Flask(__name__)
+#database instance
+db = SQLAlchemy(app)
+#connecting the app file to the database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config[SECRET_KEY] = 'password'
 
 @app.route('/') # "/" is the default route 
 def home(): #function that will be executed when the default route is accessed
