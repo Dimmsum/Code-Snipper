@@ -8,3 +8,13 @@ Features:
 How Does it work?
 A user creates an account and that account allows the user to store code snippets that they have created/used. Furthermore there will be an option 
 to change the language which it is coded in using AI to adjust the syntax appropriately.
+
+
+ACTIVATE VIRTUAL ENV:
+venv\Scripts\activate
+
+DEACTIVATE VIRTUAL ENV:
+deactivate
+
+RUN CODE:
+python app.py
